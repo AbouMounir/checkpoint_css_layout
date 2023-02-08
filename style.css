@@ -1,48 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+.container_header{
+    display: flex;
+    justify-content: center;
+}
 header{
     width: 1000px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
+    position: relative;
 }
 
-.header1{
+.header_listes{
     display: flex;
+    position: absolute;
+    left: 1rem;
 }
 
-.header1 > p{
+.header_images{
+    display: flex;
+    position: absolute;
+    right: 1rem;
+}
+
+
+.header_listes > p{
     margin: 10px;
     padding: 10px;
 }
-.header1 > img{
+.header_images > img{
     margin: 10px;
     padding: 10px;
     width: 25px;
     height: 25px;
 }
 
+.container_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .boutom{
     display: flex;
     justify-content: space-between;
+    border-style: solid;
 }
 
 .boutom > img{
     width: 10px;
     height: 5px;
 }
-.product{
+
+.add{
+    width: 50%;
+}
+section{
     width: 750px;
-    height: 400px;
-    margin-top: 100px;
-    margin-left: 250px;
     border-style: solid;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
 }
 
-.product > .texts{
+section > .texts{
     width: 350px;
     border-style: solid;
     border-color: red;
@@ -50,12 +73,7 @@ header{
     padding : 10px; 
 }
 
-.texts > p{
-    font-size: 16px;
-    font-family: 'Kumbh Sans', sans-serif;
-}
-
-.product > .products{
+section > .products{
     width: 250px;
     display: flex;
     margin: 10px;
@@ -74,7 +92,21 @@ header{
 }
 
 #product-1{
-    width: 250px;
-    height: 250px;
+    width: 275px;
+    height: 70%;
     border-radius: 10px;
+}
+
+.texts  p{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.Sneaker{
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+}
+
+.Fall_Limited_Edition_Sneakers{
+    font-weight: bold;
+    font-size: 2.5rem;
 }
