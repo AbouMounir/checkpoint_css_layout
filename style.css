@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 .container_header{
     display: flex;
     justify-content: center;
 }
 header{
     width: 1000px;
-    height: 50px;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     padding-left: 100px;
@@ -33,47 +38,36 @@ header{
 .header_images > img{
     margin: 10px;
     padding: 10px;
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
 }
 
 .container_section{
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.boutom{
-    display: flex;
-    justify-content: space-between;
-    border-style: solid;
-}
 
-.boutom > img{
-    width: 10px;
-    height: 5px;
-}
-
-.add{
-    width: 50%;
-}
 section{
-    width: 750px;
-    border-style: solid;
+    width: 800px;
     display: flex;
-    align-items: stretch;
+    align-self: center;
     justify-content: space-between;
 }
 
-section > .texts{
-    width: 350px;
-    border-style: solid;
-    border-color: red;
+.texts{
+    width: 400px;
     margin : 10px;
     padding : 10px; 
+    position: relative;
 }
 
-section > .products{
+section .images{
+    width: 45%;
+}
+.images > .products{
     width: 250px;
     display: flex;
     margin: 10px;
@@ -85,10 +79,9 @@ section > .products{
     padding: 11px;
     margin-left: 0px;
     padding-left: 0px;
-    width: 45px;
-    height: 45px;
-    border-radius: 15px;
-    
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;   
 }
 
 #product-1{
@@ -97,7 +90,8 @@ section > .products{
     border-radius: 10px;
 }
 
-.texts  p{
+.texts  p:nth-of-type(3){
+    font-size: 14px;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -108,5 +102,73 @@ section > .products{
 
 .Fall_Limited_Edition_Sneakers{
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+
+.boutom{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 40px;
+}
+
+.add{
+    background-color: hsl(25, 100%, 55%) ;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.2rem;
+    color: white;
+    font-size: 10px;
+}
+
+.add img{
+    width: 8px;
+    height: 8px;
+    align-self: center;
+}
+
+.add p{
+    align-self: center;
+}
+
+.prix_reduit{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 2px;
+}
+
+.reduction{
+    background-color: hsl(26, 100%, 94%);
+    color: hsl(25, 100%, 55%);
+    margin: 2px;
+    font-weight: bold;
+}
+
+.prix{
+    color: hsl(220, 14%, 75%) ;
+    margin: 2px;
+}
+
+.controls{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(220, 14%, 75%);
+    border-radius: 5px;
+}
+
+.controls img{
+    width: 8px;
+    height: 8px;
+    align-self: center;
+}
+
+.controls p{
+    align-self: center;
 }
