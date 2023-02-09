@@ -1,45 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    --Orange: hsl(26, 100%, 55%);
+    --Pale_orange: hsl(25, 100%, 94%);
+    --Very_dark_blue: hsl(220, 13%, 13%);
+    --Dark_grayish_blue: hsl(219, 9%, 45%);
+    --Grayish_blue: hsl(220, 14%, 75%);
+    --Light_grayish_blue: hsl(223, 64%, 98%);
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.container_header{
-    display: flex;
-    justify-content: center;
+body{
+    font-size: 16px;
 }
+
 header{
-    width: 1000px;
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
-    position: relative;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-bottom: 1px solid ;
+    border-color: var(--Grayish_blue);
 }
 
 .header_listes{
     display: flex;
-    position: absolute;
-    left: 1rem;
+    justify-content: start;
+    align-items: center;
 }
 
 .header_images{
     display: flex;
-    position: absolute;
-    right: 1rem;
+    justify-content: end;
+    align-items: center;
 }
 
-
-.header_listes > p{
-    margin: 10px;
-    padding: 10px;
+.hearder_listes_items{
+    display: flex;
+    margin-left: 40px;
+    cursor: pointer;
 }
-.header_images > img{
-    margin: 10px;
-    padding: 10px;
+.hearder_listes_items p{
+    margin-left: 20px;
+}
+
+.header_images .avatar{
     width: 45px;
     height: 45px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.header_images .cart{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
 .container_section{
@@ -51,89 +70,117 @@ header{
 
 
 section{
+    margin-top: 40px;
     width: 800px;
     display: flex;
-    align-self: center;
     justify-content: space-between;
+}
+
+.products_container{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.products_container img{
+    width: 70px;
+    height: 70px;
+    border-radius: 15px; 
+    cursor: pointer;  
+}
+
+.product-1 img{
+    width: 300px;
+    height: 70%;
+    border-radius: 10px;
 }
 
 .texts{
     width: 400px;
     margin : 10px;
-    padding : 10px; 
-    position: relative;
-}
-
-section .images{
-    width: 45%;
-}
-.images > .products{
-    width: 250px;
-    display: flex;
-    margin: 10px;
-    padding: 10px;
-}
-
-.products > img{
-    margin: 11px;
-    padding: 11px;
-    margin-left: 0px;
-    padding-left: 0px;
-    width: 65px;
-    height: 65px;
-    border-radius: 15px;   
-}
-
-#product-1{
-    width: 275px;
-    height: 70%;
-    border-radius: 10px;
+    padding : 10px;
+    position: relative; 
 }
 
 .texts  p:nth-of-type(3){
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Kumbh Sans', sans-serif;
+    color: var(--Grayish_blue);
 }
 
 .Sneaker{
     color: hsl(26, 100%, 55%);
     font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 .Fall_Limited_Edition_Sneakers{
     font-weight: bold;
     font-size: 2rem;
+    margin-top: 20px;
+}
+
+.prixs_container{
+    margin-top: 20px;
 }
 
 .boutom{
     width: 90%;
-    height: 30px;
+    height: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
 }
 
-.add{
+.boutom_add{
     background-color: hsl(25, 100%, 55%) ;
-    width: 50%;
+    width: 65%;
     height: 100%;
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     border-radius: 0.2rem;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.add img{
+.boutom_controls{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--Light_grayish_blue);
+    border-radius: 5px;
+}
+
+.boutom_controls img{
     width: 8px;
     height: 8px;
     align-self: center;
+    cursor: pointer;
 }
 
-.add p{
+.boutom_controls p{
     align-self: center;
+    cursor: pointer;
+}
+
+.boutom_add img{
+    width: 16px;
+    height: 16px;
+    align-self: center;
+}
+
+.boutom_add p{
+    margin-left: 20px;
+    align-self: center;
+    font-size: 16px;
 }
 
 .prix_reduit{
@@ -142,9 +189,9 @@ section .images{
     margin: 2px;
 }
 
-.reduction{
+.pourcentage_reduction{
     background-color: hsl(26, 100%, 94%);
-    color: hsl(25, 100%, 55%);
+    color: var(--Orange);
     margin: 2px;
     font-weight: bold;
 }
@@ -152,23 +199,6 @@ section .images{
 .prix{
     color: hsl(220, 14%, 75%) ;
     margin: 2px;
+    text-decoration: line-through;
 }
 
-.controls{
-    width: 35%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-color: hsl(220, 14%, 75%);
-    border-radius: 5px;
-}
-
-.controls img{
-    width: 8px;
-    height: 8px;
-    align-self: center;
-}
-
-.controls p{
-    align-self: center;
-}

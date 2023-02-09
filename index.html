@@ -15,6 +15,7 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      margin: 20px;
     }
 
     .attribution a {
@@ -27,61 +28,61 @@
   <div class="container_header">
     <header>
       <div class="header_listes">
-        <p class="pg"> Sneakers </p>
-        <p> Collections </p>
-        <p> Men </p>
-        <p> Women </p>
-        <p> About </p>
-        <p> Contact </p>
+        <img class="header_listes_logo" src="images/logo.svg" alt="">
+        <div class="hearder_listes_items">
+          <p> Collections </p>
+          <p> Men </p>
+          <p> Women </p>
+          <p> About </p>
+          <p> Contact </p>
+        </div>
       </div>
       <div class="header_images">
-        <img src="images/icon-cart.svg" alt="icon-cart">
-        <img src="images/image-avatar.png" alt="image-avatar">
+        <img class="cart" src="images/icon-cart.svg" alt="icon-cart">
+        <img class="avatar" src="images/image-avatar.png" alt="image-avatar">
       </div>
     </header>
   </div>
-  <hr>
   <div class="container_section">
     <section>
       <div class="images">
-        <img id="product-1" src="images/image-product-1.jpg" alt="image-product-1">
-        <br>
-        <div class="products">
-          <img src="images/image-product-1.jpg" alt="image-product-1">
-          <img src="images/image-product-2.jpg" alt="image-product-2">
-          <img src="images/image-product-3.jpg" alt="image-product-3">
-          <img src="images/image-product-4.jpg" alt="image-product-4">
+        <div class="product-1"><img src="images/image-product-1.jpg" alt="image-product-1">
+        </div>
+        <div class="products_container">
+          <img class="products" src="images/image-product-1-thumbnail.jpg" alt="image-product-1">
+          <img class="products" src="images/image-product-2-thumbnail.jpg" alt="image-product-2">
+          <img class="products" src="images/image-product-3-thumbnail.jpg" alt="image-product-3">
+          <img class="products" src="images/image-product-4-thumbnail.jpg" alt="image-product-4">
         </div>
       </div>
       <div class="texts">
-        <br>
         <p class="Sneaker">Sneaker Company</p>
         <p class="Fall_Limited_Edition_Sneakers"> Fall Limited Edition Sneakers </p>
         <br>
         <p> These low-profile sneakers are your perfect casual wear companion. Featuring a
           durable rubber outer sole, they’ll withstand everything the weather can offer.
         </p>
-        <br>
-        <p> <span class="prix_reduit"> $125.00 </span> <span class="reduction"> 50% </span> </p>
-        <p class="prix"> $250.00 </p>  
+        <div class="prixs_container">
+          <p> <span class="prix_reduit"> $125.00 </span> <span class="pourcentage_reduction"> 50% </span> </p>
+          <p class="prix"> $250.00 </p>
+        </div>
         <div class="boutom">
-          <div class="controls">
-          <img src="images/icon-minus.svg" alt="icon-minus">
-          <p> 0 </p>
-          <img src="images/icon-plus.svg" alt="icon-plus">
+          <div class="boutom_controls">
+            <img src="images/icon-minus.svg" alt="icon-minus">
+            <p> 0 </p>
+            <img src="images/icon-plus.svg" alt="icon-plus">
           </div>
-          <div class="add">
-            <img src="images/icon-cart.svg" alt="icon-cart">
-            <p> Add to cart </p> 
+          <div class="boutom_add">
+            <img src="images/icon-cart-blanc.svg" alt="icon-cart">
+            <p> Add to cart </p>
           </div>
         </div>
       </div>
-
     </section>
   </div>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#"> Nahoua Aruna Coulibaly</a>.
   </footer>
 </body>
 
