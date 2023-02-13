@@ -9,6 +9,10 @@
     --Light_grayish_blue: hsl(223, 64%, 98%);
 }
 
+.icon-menu{
+    display: none;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -16,6 +20,7 @@
 }
 body{
     font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 header{
@@ -90,7 +95,7 @@ section{
     cursor: pointer;  
 }
 
-.product-1 img{
+.product-1 .product{
     width: 300px;
     height: 70%;
     border-radius: 10px;
@@ -200,5 +205,121 @@ section{
     color: hsl(220, 14%, 75%) ;
     margin: 2px;
     text-decoration: line-through;
+}
+
+@media screen and (max-width:375px) {
+    .hearder_listes_items{
+        display: none;
+    }
+    .icon-menu{
+        display: inline;
+        margin-right: 1rem;
+    }
+    header{
+        border : none;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .header_images .avatar{
+        width: 25px;
+        height: 25px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .header_images .cart{
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+    }
+    section{
+        margin: 0px;
+        display: block;
+    }
+    .container_section{
+        position: relative;
+    }
+
+    .images{
+        width: 100%;
+    } 
+    
+    .texts{
+        height: 350px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: 260px;
+    }
+    .products_container{
+        display: none;
+    }
+
+    .product-1{
+        background-image: url(images/image-product-1-thumbnail.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        border-radius: 0px;
+        margin-top: 0px;
+        height: 250px;
+        position: absolute;
+        top: 2px;
+    }
+
+    .icon-next img, .icon-previous img{
+        width: 30%;
+        height: 30%;
+        margin: 10px;
+    }
+
+    .icon-previous{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+    }
+    .icon-next{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+    }
+    .product{
+        display: none;
+    }
+
+    .boutom{
+        margin-top: 5px;
+        display: block;
+        align-items: center;
+        position: absolute;
+        bottom: 25px;
+    }
+    .Fall_Limited_Edition_Sneakers{
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .boutom_add{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .boutom_controls{
+        width: 100%;
+        margin-left: 16px;
+    }
+    .prixs_container{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
